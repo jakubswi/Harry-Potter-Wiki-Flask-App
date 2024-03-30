@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Harry Potter Wiki</title>
+    {% block styles %}
+    {{ bootstrap.load_css() }}
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='assets/img/Deathly_Hallows_Sign.svg') }}" rel="icon" type="image/x-icon">
+    {% endblock %}
+</head>
+<body>
+<div class="container">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+        <a class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+           href="{{url_for('main_page')}}">
+            <img class="me-2" height="32" src="{{ url_for('static', filename='assets/img/Deathly_Hallows_Sign.svg') }}"
+                 width="32">
+            <span class="fs-4">Harry Potter Wiki</span>
+        </a>
+    </header>
+</div>

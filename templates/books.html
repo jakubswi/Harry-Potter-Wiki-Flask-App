@@ -1,0 +1,40 @@
+{% include "header.html" %}
+<div class="container">
+    <h1>{{data['title']}}</h1>
+    <div class="p-3 text-center">
+        <img height="400" src="{{data.cover}}">
+    </div>
+    <div class="p-3">
+        <table class="table table-striped">
+            <tbody>
+            <tr>
+                <th scope="row">Author</th>
+                <td>{{data['author']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Dedication</th>
+                <td>{{data['dedication']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Pages</th>
+                <td>{{data['pages']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Release date</th>
+                <td>{{data['release_date']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Summary</th>
+                <td>{{data['summary']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">wiki</th>
+                <td><a href="{{data['wiki']}}">{{data['wiki']}}</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+{% include "footer.html" %}

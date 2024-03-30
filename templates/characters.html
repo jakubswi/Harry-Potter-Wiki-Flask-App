@@ -1,0 +1,105 @@
+{% include "header.html" %}
+<div class="container">
+    <h1 class="text-center">{{data['name']}}</h1>
+    <div class="p-3 text-center">
+        <img height="400" src="{{data.image}}">
+    </div>
+    <div class="p-3">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+                <th scope="row">Alias names</th>
+                <td>{{data['alias_names']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Animagus</th>
+                <td>{{data['animagus']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Blood status</th>
+                <td>{{data['blood_status']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Boggart</th>
+                <td>{{data['boggart']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">born</th>
+                <td>{{data['born']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">died</th>
+                <td>{{data['died']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Eye color</th>
+                <td>{{data['eye_color']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Family members</th>
+                <td>{{data['family_members']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Gender</th>
+                <td>{{data['gender']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Hair color</th>
+                <td>{{data['hair_color']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Height</th>
+                <td>{{data['height']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">House</th>
+                <td>{{data['house']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Jobs</th>
+                <td>{{data['jobs']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Marital status</th>
+                <td>{{data['marital_status']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Nationality</th>
+                <td>{{data['nationality']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Patronus</th>
+                <td>{{data['patronus']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Romances</th>
+                <td>{{data['romances']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Skin color</th>
+                <td>{{data['skin_color']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Species</th>
+                <td>{{data['species']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Titles</th>
+                <td>{{data['titles']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Wands</th>
+                <td>{{data['wands']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Weight</th>
+                <td>{{data['weight']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Wiki</th>
+                <td><a href="{{data['wiki']}}">{{data['wiki']}}</a></td>
+            </tr>
+            </thead>
+        </table>
+    </div>
+    {% include "footer.html" %}

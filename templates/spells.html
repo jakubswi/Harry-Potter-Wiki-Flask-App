@@ -1,0 +1,44 @@
+{% include "header.html" %}
+<div class="container">
+    <h1>{{data['name']}}</h1>
+    <div class="p-3 text-center">
+        <img height="400" src="{{data.image}}">
+    </div>
+    <div class="p-3">
+        <table class="table table-striped">
+            <tbody>
+            <tr>
+                <th scope="row">Category</th>
+                <td>{{data['location']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Creator</th>
+                <td>{{data['creator']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Effect</th>
+                <td>{{data['effect']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Hand</th>
+                <td>{{data['hand']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Incantation</th>
+                <td>{{data['incantation']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Light</th>
+                <td>{{data['light']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">wiki</th>
+                <td><a href="{{data['wiki']}}">{{data['wiki']}}</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+{% include "footer.html" %}

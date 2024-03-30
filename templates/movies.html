@@ -1,0 +1,77 @@
+{% include "header.html" %}
+
+<div class="container">
+    <h1>{{data['title']}}</h1>
+    <div class="p-3 text-center">
+        <img height="400" src="{{data.poster}}">
+    </div>
+    <div class="p-3">
+        <table class="table table-striped">
+            <tbody>
+            <tr>
+                <th scope="row">Box office</th>
+                <td>{{data['box_office']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Budget</th>
+                <td>{{data['budget']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Cinematographers</th>
+                <td>{{[cinematographer for cinematographer in data['cinematographers']]}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Directors</th>
+                <td>{{[director for director in data['directors']]}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Distributors</th>
+                <td>{{[distributor for distributor in data['distributors']]}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Editors</th>
+                <td>{{[editor for editor in data['editors']]}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Music composers</th>
+                <td>{{[music_composer for music_composer in data['music_composers']]}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Producers</th>
+                <td>{{[producer for producer in data['producers']]}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Rating</th>
+                <td>{{data['rating']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Release date</th>
+                <td>{{data['release_date']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Runtime</th>
+                <td>{{data['runtime']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Screenwriters</th>
+                <td>{{[screenwriter for screenwriter in data['screenwriters']]}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Summary</th>
+                <td>{{data['summary']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Trailer</th>
+                <td>{{data['trailer']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Wiki</th>
+                <td><a href="{{data['wiki']}}">{{data['wiki']}}</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+{% include "footer.html" %}

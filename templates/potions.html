@@ -1,0 +1,52 @@
+{% include "header.html" %}
+<div class="container">
+    <h1>{{data['name']}}</h1>
+    <div class="p-3 text-center">
+        <img height="400" src="{{data.image}}">
+    </div>
+    <div class="p-3">
+        <table class="table table-striped">
+            <tbody>
+            <tr>
+                <th scope="row">Characteristics</th>
+                <td>{{data['author']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Difficulty</th>
+                <td>{{data['difficulty']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Effect</th>
+                <td>{{data['effect']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Inventors</th>
+                <td>{{data['inventors']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Ingredients</th>
+                <td>{{data['ingredients']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Manufacturers</th>
+                <td>{{data['manufacturers']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Side effects</th>
+                <td>{{data['side_effects']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Time</th>
+                <td>{{data['time']}}</td>
+            </tr>
+            <tr>
+                <th scope="row">Wiki</th>
+                <td><a href="{{data['wiki']}}">{{data['wiki']}}</a></td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+{% include "footer.html" %}
