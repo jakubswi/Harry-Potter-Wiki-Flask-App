@@ -21,7 +21,7 @@ To install and run the application locally, follow these steps:
 
 1. Clone the repository:
     ```bash
-   git clone https://github.com/your-username/harry-potter-wiki.git
+   git clone https://github.com/jakubswi/Harry-Potter-Wiki-Flask-App.git
    
 2. Navigate to the project directory:
     ```bash
